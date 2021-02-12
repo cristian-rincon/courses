@@ -1,0 +1,25 @@
+{
+  "name": "landing-page-con-unica-seccion-de-introduccin",
+  "version": "1.0.0",
+  "description": "Desafio de la escuela de desarrollo web de platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass style/sass/componentes/main.scss style/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristian-rincon/landing-page-con-unica-seccion-de-introduccin.git"
+  },
+  "author": "Cristian Orlando Rincon <cristian.o.rincon.b@gmail.com> (https://github.com/cristian-rincon/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristian-rincon/landing-page-con-unica-seccion-de-introduccin/issues"
+  },
+  "homepage": "https://github.com/cristian-rincon/landing-page-con-unica-seccion-de-introduccin#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "pug-to-html": "^1.0.2",
+    "sass": "^1.26.10"
+  }
+}

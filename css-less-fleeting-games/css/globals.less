@@ -1,0 +1,49 @@
+@primary-color: #2c4e7b;
+@secondary-color: #4194e2;
+@light-color: #F8FAFA;
+@variation-color: #49a77c;
+@font1: 'Lato', sans-serif;
+@font2: 'Oswald', sans-serif;
+@base-font-size: 18px;
+@dark-mode: false;
+
+.shadow-box {
+    box-shadow: 0px 5px 15px 0px fade(if((@dark-mode),@secondary-color,@primary-color), 40%);
+}
+
+.Oswald {
+    font-family: @font2;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.font(@font-size){
+    font-size: @font-size;
+    line-height: @font-size + 10%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: @font1;
+    color: if((@dark-mode), @light-color, @primary-color);
+    .font(@base-font-size);
+    background-color: if((@dark-mode), @primary-color, @light-color);
+}
+
+h1,
+h2,
+h3 {
+    .Oswald;
+    margin: 0;
+}
+
+.main__footer {
+    text-align: center;
+    padding: 1em;
+    background-color: if((@dark-mode),@secondary-color, @light-color);
+}

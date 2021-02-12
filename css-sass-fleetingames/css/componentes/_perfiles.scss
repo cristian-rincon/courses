@@ -1,0 +1,58 @@
+.perfil {
+  width: 45%;
+  color: $light-color;
+  background-color: $secondary-color;
+  padding: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 1px 1px 30px 0px rgba(0,0,0,0.75);
+
+
+  &__avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 2em;
+  }
+  &__nombre {
+    text-align: center;
+    font-size: 20px;
+    @include titulos($font2);
+  }
+  &__titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: get-opacity($light-color, 0.5);
+  }
+  &__boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9em;
+    height: 2.5em;
+    margin: 1em auto;
+    border-radius: 0.8em;
+    text-decoration: none;
+    text-align: center;
+    color: $light-color;
+    @include titulos($font2);
+    border: 1px solid $light-color;
+    /* box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5); */
+  }
+  &__boton:hover {
+    transition: .5s;
+    background-color: $light-color;
+    color: $primary-color;
+  }
+}
+
+.perfil__minibio {
+  margin: 0 auto;
+  padding-top: 20px;
+  h2 {
+    @extend .perfil__nombre;
+  }
+  h3 {
+    @extend .perfil__titulo;
+  }
+}

@@ -1,0 +1,13 @@
+header { 
+    /* border: 1px solid green; */
+    /* margin: 3em 0em 0em 5em; */
+    img {
+        width: 14em;
+    }
+    @include media('mobile-only') {
+        margin: 1.5em;
+        img {
+            width: 7em;
+        }
+    }
+}

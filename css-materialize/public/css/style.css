@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    max-height: 500px;
+}
+
+header nav {
+    height: 100px;
+    background: #fff;
+    box-shadow: none;
+}
+
+nav .brand-logo {
+    height: 100px;
+}
+
+nav .brand-logo img {
+    width: 100px;
+    box-shadow: none;
+}
+
+header nav ul {
+    height: 100px;
+}
+
+header nav ul a {
+    color: #000000;
+}
+
+.header-main-pic {
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/img/Banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav .sidenav-trigger i {
+    color: #000000;
+}
+
+.input-field.input-container {
+    height: 100px;
+    float: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.input-field>#search {
+    margin-top: 25px;
+}
+
+.input-container i {
+    margin-top: 45px;
+    margin-right: 15px;
+}
+
+footer.page-footer {
+    height: 80px;
+    background: #000000;
+    bottom: 0;
+}
+
+/* Post.html */
+
+.post-pic {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://picsum.photos/seed/picsum/1000/400');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

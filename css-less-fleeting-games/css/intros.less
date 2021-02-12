@@ -1,0 +1,67 @@
+.intro {
+    width: 1340px;
+    height: 650px;
+    padding: 1em;
+    margin: 0 auto;
+    position: relative;
+    background-color: @light-color;
+    .shadow-box;
+    &__imagen {
+        width: 100%;
+        /* position: absolute; */
+
+        img {
+            width: 100%;
+            height: 624px;
+            object-fit: cover;
+        }
+    }
+
+    &__contenido {
+        width: 50%;
+        margin: 0 auto;
+        position: absolute;
+        top: 156px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: @light-color;
+        line-height: initial;
+    }
+
+    &__categoria {
+        .Oswald;
+        color: fade(@light-color, 50%);
+    }
+
+    &__titulo {
+        font-family: @font2;
+        text-transform: uppercase;
+        .font(50px);
+    }
+
+    &__autor {
+        width: 150px;
+        margin: 0 auto;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        right: 0;
+        color: @light-color;
+
+        img {
+            width: 60px;
+            height: 50px;
+            float: left;
+            padding-right: 10px;
+            border-radius: 10em;
+        }
+
+        span {
+            display: inline-block;
+        }
+        &-titulo {
+            color: fade(@light-color, 50%);
+        }
+    }
+}

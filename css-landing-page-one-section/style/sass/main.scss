@@ -1,0 +1,42 @@
+@import "./componentes/breakpoints";
+@import "./componentes/bootstrap_reboot";
+@import "./componentes/header";
+@import "./componentes/main_section";
+@import "./componentes/footer";
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$primary: hsl(228, 45%, 44%);
+$light-color: #fff;
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Poppins', sans-serif;
+    color: $light-color;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background: url('../images/bg-desktop.svg'),$primary;
+    opacity: 1;
+    color: $light-color;
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    
+    @include media('mobile-only') {
+        background: url('../images/bg-mobile.svg'),$primary;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.container {
+    margin: 2em 4em 0em 4em;
+    @include media('mobile-only') {
+        margin: 1em 2em 0em 2em;
+    }
+}

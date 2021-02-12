@@ -1,0 +1,36 @@
+$primary: hsl(257, 40%, 49%);
+main.section {
+    /* border: 1px solid green; */
+    padding: 2em 0em 0em 0em;
+    display: flex;
+    flex: 1 0 auto;
+    figure {
+        img {
+            max-width: 100%;
+            
+        }
+    }
+    article {
+        padding-left: 3em;
+        button {
+            color:$primary;
+            border-radius: 5em;
+            border: none;
+            margin-top: 1em;
+            padding: .6em 3.5em;
+            font-size: 1.2em;
+            box-shadow: 9px 9px 20px -5px rgba(0,0,0,0.75);
+
+        }
+        @include media('mobile-only') {
+            padding: 0;
+        }
+    }
+    @include media('mobile-only') {
+        display: block;
+        article {
+            text-align: center;
+            
+        }
+    }
+}

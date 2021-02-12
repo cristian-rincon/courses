@@ -1,0 +1,36 @@
+
+
+footer {
+    /* border: 1px solid green; */
+    padding: 2em 0em 4em 0em;
+    @include media('mobile-only') {
+        text-align: center;
+        padding: 2em 0em 4em 0em;
+    }
+}
+
+.footer {
+    
+    &__container {
+        margin: 0em 4em 0em 4em;
+        @include media('mobile-only') {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 4em;
+        }
+        a{
+            float: right;
+            color: #fff;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            padding: .4em .8em;
+            margin-left: .8em;
+        }
+        .first {
+            margin: 0;
+            padding: .4em .9em;
+        }
+
+    }
+}

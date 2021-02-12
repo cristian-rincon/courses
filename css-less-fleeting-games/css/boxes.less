@@ -1,0 +1,25 @@
+.contenedor--cajas {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caja {
+    max-width: 430px;
+    margin-bottom: 3em;
+    .shadow-box;
+    &__contenido {
+        padding: 25px;
+        background-color: if((@dark-mode), @secondary-color, @light-color);
+    }
+    span {
+        color: @secondary-color;
+        .Oswald;
+    }
+    a {
+        text-decoration: none;
+        color: if((@dark-mode), @light-color, @variation-color);
+        .Oswald;
+    }
+}

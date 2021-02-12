@@ -1,0 +1,44 @@
+@media (max-width: $breakpoint-tablet) {
+  .galeria {
+    &__foto-principal {
+      float: left;
+    }
+    &__fotos-adicionales img {
+      height: 3.8em;
+      margin: 0.1em;
+    }
+  }
+  .articulos {
+    .contenedor__social {
+      padding-left: 1em;
+      padding-right: 1em;
+      a {
+        margin-right: .2em;
+        margin-left: .2em;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smartphone) {
+  main {
+    display: grid;
+  }
+  .perfil {
+    width: 100%;
+  }
+  .articulos {
+    width: 100%;
+  }
+}
+
+@media (max-width: $breakpoint-smartphone-xs) {
+  main {
+    display: grid;
+  }
+  .galeria {
+    &__fotos-adicionales img {
+      height: 3em;
+    }
+  }
+}

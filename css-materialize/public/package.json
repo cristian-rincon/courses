@@ -1,0 +1,24 @@
+{
+  "name": "materialize-css",
+  "version": "1.0.0",
+  "description": "fleeting news page with materialize-css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristian-rincon/materialize-css.git"
+  },
+  "keywords": [
+    "materialize",
+    "css",
+    "javascript"
+  ],
+  "author": "Cristian Rincón",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristian-rincon/materialize-css/issues"
+  },
+  "homepage": "https://github.com/cristian-rincon/materialize-css#readme"
+}

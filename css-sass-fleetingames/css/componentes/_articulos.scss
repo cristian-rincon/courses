@@ -1,0 +1,38 @@
+.articulos {
+  width: 55%;
+  padding: 3em 1em;
+  .contenedor__social {
+    border: 1px solid $secondary-color;
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    align-items: center;
+    a {
+      color: $secondary-color;
+      font-size: 2em;
+    }
+  }
+}
+
+.articulo {
+  margin-bottom: 5em;
+  border-bottom: 3px solid $secondary-color;
+  &__categoria {
+    font-weight: 500;
+    font-size: 1em;
+    color: $secondary-color;
+    @include titulos($font2);
+    &__titulo {
+      font-size: 1.2em;
+      @include titulos($font2);
+    }
+    &__description {
+      margin-bottom: 2.5em;
+      padding-right: 9em;
+    }
+  }
+}
